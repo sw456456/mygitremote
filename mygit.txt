@@ -1,51 +1,53 @@
 
-2.ĞÂ½¨ÏîÄ¿(scrapy startproject)
+2.æ–°å»ºé¡¹ç›®(scrapy startproject)
 
-½øĞĞĞéÄâ»·¾³£¬ÒòÎªscrapyÊÇ°²×°ÔÚĞéÄâ»·¾³£ºworkon atguigu_shop
-2.1´´½¨ĞÂÏîÄ¿µÄÃüÁî£ºscrapy startproject mySpider
-´´½¨ÅÀ³æµÄÃüÁî£º
-2.2½øÈëmySpiderÄ¿Â¼£ºcd mySpider
-´´½¨ÅÀÈ¡ÃüÁî£ºscrapy genspider Atguigu www.atguigu.com
+è¿›è¡Œè™šæ‹Ÿç¯å¢ƒï¼Œå› ä¸ºscrapyæ˜¯å®‰è£…åœ¨è™šæ‹Ÿç¯å¢ƒï¼šworkon atguigu_shop
+2.1åˆ›å»ºæ–°é¡¹ç›®çš„å‘½ä»¤ï¼šscrapy startproject mySpider
+åˆ›å»ºçˆ¬è™«çš„å‘½ä»¤ï¼š
+2.2è¿›å…¥mySpiderç›®å½•ï¼šcd mySpider
+åˆ›å»ºçˆ¬å–å‘½ä»¤ï¼šscrapy genspider Atguigu www.atguigu.com
 
-ÅÀ³æÃû³Æ£ºAtguigu
-ÔÊĞíÅÀÈ¡µÄ·¶Î§ÊÇ£ºwww.atguigu.com
+çˆ¬è™«åç§°ï¼šAtguigu
+å…è®¸çˆ¬å–çš„èŒƒå›´æ˜¯ï¼šwww.atguigu.com
 
-2.3 ÔÊĞíÅÀ³æÃüÁî(mySpiderÄ¿Â¼£ºcd mySpider)£ºscrapy crawl Atguigu
-
-
-
-
-3. Ã÷È·Ä¿±ê(mySpider/items.py)
-ÒªÅÀÈ¡µÄÊı¾İ
+2.3 å…è®¸çˆ¬è™«å‘½ä»¤(mySpiderç›®å½•ï¼šcd mySpider)ï¼šscrapy crawl Atguigu
 
 
 
-ËùÓĞÀÏÊ¦µÄxpath: //div[@class="con"]/ul/li
 
-ĞÕÃû£ºname
+3. æ˜ç¡®ç›®æ ‡(mySpider/items.py)
+è¦çˆ¬å–çš„æ•°æ®
+
+
+
+æ‰€æœ‰è€å¸ˆçš„xpath: //div[@class="con"]/ul/li
+
+å§“åï¼šname
 //div[@class="con"]/ul/li/div[@class="t-info"]/h5/b[1]/text()
-Ö°Î»£ºposition
+èŒä½ï¼šposition
 //div[@class="con"]/ul/li/div[@class="t-info"]/h5/b[@class="b2"]/text()
-¼ò½é£ºinfo
+ç®€ä»‹ï¼šinfo
 //div[@class="con"]/ul/li/div[@class="t-info"]/div[@class="memo"]/div[@class="memo-i"]/text()
-ÌØµã£ºpoint
+ç‰¹ç‚¹ï¼špoint
 //div[@class="con"]/ul/li/div[@class="t-info"]/p/a/text()
-·ç¸ñ£ºstyle
+é£æ ¼ï¼šstyle
 //div[@class="con"]/ul/li/div[@class="t-info"]/p[2]/text()
-Í¼Æ¬£ºimage
+å›¾ç‰‡ï¼šimage
 //div[@class="con"]/ul/li/div[@class="t-img"]/img/@src
 
-4. ÅäÖÃÎÄ¼ş£¨spiders/settings.py£©ÏÈÁË½â
+4. é…ç½®æ–‡ä»¶ï¼ˆspiders/settings.pyï¼‰å…ˆäº†è§£
 
-5. ÖÆ×÷ÅÀ³æ £¨spiders/AtguiguSpider.py£©
-Ğ´ÅÀÈ¡´úÂë
+5. åˆ¶ä½œçˆ¬è™« ï¼ˆspiders/AtguiguSpider.pyï¼‰
+å†™çˆ¬å–ä»£ç 
 
-6. ÅäÖÃPyCharmÈÃScrapyÏîÄ¿Ö±½ÓÖ´ĞĞ
+6. é…ç½®PyCharmè®©Scrapyé¡¹ç›®ç›´æ¥æ‰§è¡Œ
 
-7. Ê¹ÓÃxpath¹æÔòÈ¡Êı¾İ
+7. ä½¿ç”¨xpathè§„åˆ™å–æ•°æ®
 
-8. ±£´æÊı¾İ£¨spiders/pipelines.py£©ÊµÏÖ
+8. ä¿å­˜æ•°æ®ï¼ˆspiders/pipelines.pyï¼‰å®ç°
 
 
 
 9.git
+
+10.è¿œç¨‹ä¿®æ”¹
