@@ -45,3 +45,7 @@
 7. 使用xpath规则取数据
 
 8. 保存数据（spiders/pipelines.py）实现
+
+
+
+9.git
