@@ -1,0 +1,47 @@
+
+2.新建项目(scrapy startproject)
+
+进行虚拟环境，因为scrapy是安装在虚拟环境：workon atguigu_shop
+2.1创建新项目的命令：scrapy startproject mySpider
+创建爬虫的命令：
+2.2进入mySpider目录：cd mySpider
+创建爬取命令：scrapy genspider Atguigu www.atguigu.com
+
+爬虫名称：Atguigu
+允许爬取的范围是：www.atguigu.com
+
+2.3 允许爬虫命令(mySpider目录：cd mySpider)：scrapy crawl Atguigu
+
+
+
+
+3. 明确目标(mySpider/items.py)
+要爬取的数据
+
+
+
+所有老师的xpath: //div[@class="con"]/ul/li
+
+姓名：name
+//div[@class="con"]/ul/li/div[@class="t-info"]/h5/b[1]/text()
+职位：position
+//div[@class="con"]/ul/li/div[@class="t-info"]/h5/b[@class="b2"]/text()
+简介：info
+//div[@class="con"]/ul/li/div[@class="t-info"]/div[@class="memo"]/div[@class="memo-i"]/text()
+特点：point
+//div[@class="con"]/ul/li/div[@class="t-info"]/p/a/text()
+风格：style
+//div[@class="con"]/ul/li/div[@class="t-info"]/p[2]/text()
+图片：image
+//div[@class="con"]/ul/li/div[@class="t-img"]/img/@src
+
+4. 配置文件（spiders/settings.py）先了解
+
+5. 制作爬虫 （spiders/AtguiguSpider.py）
+写爬取代码
+
+6. 配置PyCharm让Scrapy项目直接执行
+
+7. 使用xpath规则取数据
+
+8. 保存数据（spiders/pipelines.py）实现
